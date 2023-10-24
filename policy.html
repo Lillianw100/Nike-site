@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <title>Policies</title>
+    <style>
+        img {
+            max-width:100%;
+            height:auto;
+        }
+.container > * { 
+             border:solid 1px transparent; 
+        }
+        .container {
+            display:grid;
+            grid-template-columns:1fr 1fr 1fr;
+            grid-template-areas:
+            "nav nav cart"
+            "logo logo logo"
+            "header header header"
+            "notice notice notice"
+            "choice choice choice"
+            "access access access"
+            "security security security"
+            "contactinformation contactinformation contactinformation"
+            "footer footer footer"
+            ;
+        }
+        nav {
+            grid-area:nav;
+        }
+        .logo {
+            grid-area:logo;
+            display:flex;
+            align-items:center;
+            justify-content:center;
+        }
+        .cart {
+            grid-area:cart;
+            display:flex;
+            align-items:flex-start;
+            justify-content:flex-end;
+        }
+        header {
+            grid-area:header;
+        }
+        .notice {
+            grid-area:notice;
+        }
+        .choice {
+            grid-area:choice;
+        }
+        .access {
+            grid-area:access;
+        }
+        .security {
+            grid-area:security;
+        }
+        .contactinformation {
+            grid-area:contactinformation;
+        }
+        footer {
+            grid-area:footer;
+        }
+@media only screen and (min-width:620px) {
+    .container {
+        display:grid;
+        grid-template-columns:repeat(6, 1fr);
+        grid-template-areas:
+        "nav nav logo logo cart cart"
+        "header header header header header header"
+        "notice notice notice notice notice notice"
+        "choice choice choice choice choice choice"
+        "access access access access access access"
+        "security security security security security security"
+        "contactinformation contactinformation contactinformation contactinformation contactinformation contactinformation"
+        "footer footer footer footer footer footer"
+        ;
+    }
+}
+@media only screen and (min-width:900px) {
+    .container {
+        display:grid;
+        grid-template-columns:repeat(6, 1fr);
+        grid-auto-rows:minmax(100px, auto);
+        grid-template-areas:
+        "nav nav logo logo cart cart"
+        "header header header header header header"
+        "notice notice notice choice choice choice"
+        "access access access security security security"
+        "contactinformation contactinformation contactinformation contactinformation contactinformation contactinformation"
+        "footer footer footer footer footer footer"
+        ;
+    }
+}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <nav>
+            <span><a href="index.html">Home</a></span>
+            <span><a href="product1.html">Women's Clothing</a></span>
+            <span><a href="product2.html">Men's Clothing</a></span>
+            <span><a href="policy.html">Policies</a></span>
+        </nav>
+        <div class="cart">
+            <strong class="shopping">Your Cart</strong> <img src="images/shoppingcart3.png" alt="shoppingcarticon">
+        </div>
+        <div class="logo">
+            <img src="images/retaillogo.png" class="wdn-stretch rounded-corners" alt="logo">
+        </div>
+        <header>
+            <p><b>Private Policy</b></p>
+        </header>
+        <div class="notice">
+            <p><u>Notice</u></p>
+            <p>When you make a purchase on GoFitActivewear, personal information and data is collected. The data and information collected includes your name, phone number, email, birthday, address, username and password. If a product is purchased, your credit card, and billing address are collected. Any information provided will be reused when purchasing future products from this site. No information provided will be given or sold, and is protected on this site. GFA uses cookies to improve user experience and to monitor website traffic.</p>
+        </div>
+        <div class="choice">
+            <p><u>Choice</u></p>
+            <p>Customers on the GoFitActivewear website have the choice to accept or decline the collection of cookie data if they wish to not have their personal information and data used.</p>
+        </div>
+        <div class="access">
+            <p><u>Access</u></p>
+            <p>All personal informaion and data collected on this site, upon request, can be changed or deleted at anytime. This site uses the data collected internally only. No information provided will be disclosed to other parties. Customers are allowed to Contact Us about any questions or concerns regarding their personal information.</p>
+        </div>
+        <div class="security">
+            <p><u>Security</u></p>
+            <p>Security policies and procedures are made to ensure protection of personal information from potential mistransmission or subsequent storage of information.</p>
+        </div>
+        <div class="contactinformation">
+            <p><u>Contact Information</u></p>
+            <p>To find out more or have any additional questions or concerns, contact GoFitActivewear:<br><u>Email:</u> GoFitActivewear@gmail.com<br><u>Phone:</u> (123) 456-7890<br></p>
+        </div>
+        <footer>
+            <p>| 2022 | GoFitActivewear | All Rights Reserved.|</p>
+        </footer>
+        </div>
+</body>
+</html>

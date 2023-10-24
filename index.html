@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <title>Home Page</title>
+    <style>
+        img {
+            max-width:100%;
+            height:auto;
+        }
+         .container > * { 
+              border:solid 1px transparent;  
+        }
+        .container {
+            display:grid;
+            grid-template-columns:1fr 1fr 1fr;
+            grid-template-areas:
+            "nav nav cart"
+            "logo logo logo"
+            "hero hero hero"
+            "title1 title1 title1"
+            "section1 section1 section1"
+            "section2 section2 section2"
+            "section3 section3 section3"
+            "title2 title2 title2"
+            "section4 section4 section4"
+            "section5 section5 section5"
+            "section6 section6 section6"
+            "footer footer footer"
+            ;
+        }
+        nav {
+            grid-area:nav;  
+        }
+        .logo {
+            grid-area:logo;
+            display:flex;
+            align-items:center;
+            justify-content:center;
+        }
+        .cart {
+            grid-area:cart;
+            display:flex;
+            align-items:flex-start;
+            justify-content:flex-end;
+        }
+        .hero {
+            grid-area:hero;
+            background-image:url(images/hero.jpg);
+            background-repeat:no-repeat;
+            background-position:center center;
+            background-size:cover;
+            height:400px;
+            display:flex;
+            justify-content:center;
+            color:#ffffff;
+            font-size:50px;
+            text-transform:uppercase;
+
+            
+        }
+        .title1 {
+            grid-area:title1;
+        }
+        .section1 {
+            grid-area:section1;
+        }
+        .section2 {
+            grid-area:section2;
+        }
+        .section3 {
+            grid-area:section3;
+        }
+        .title2 {
+            grid-area:title2;
+        }
+        .section4 {
+            grid-area:section4;
+        }
+        .section5 {
+            grid-area:section5;
+        }
+        .section6 {
+            grid-area:section6;
+        }
+        footer {
+            grid-area:footer;
+        }
+@media only screen and (min-width:620px) {
+    .container {
+        display:grid;
+        grid-template-columns:repeat(3, 1fr);
+        grid-template-areas:
+            "nav logo cart"
+            "hero hero hero"
+            "title1 title1 title1"
+            "section1 section1 section1"
+            "section2 section2 section2"
+            "section3 section3 section3"
+            "title2 title2 title2"
+            "section4 section4 section4"
+            "section5 section5 section5"
+            "section6 section6 section6"
+            "footer footer footer"
+            ;
+    }
+    /* .cart {
+        display:flex;
+        padding-left:185px;
+    } */
+}
+@media only screen and (min-width:900px) {
+    .container {
+        display:grid;
+        grid-template-columns:repeat(12, 1fr);
+        grid-auto-rows:minmax(100px, auto);
+        grid-template-areas:
+        "nav nav nav nav logo logo logo logo cart cart cart cart"
+        "hero hero hero hero hero hero hero hero hero hero hero hero"
+        "title1 title1 title1 title1 title1 title1 title1 title1 title1 title1 title1 title1"
+        "section1 section1 section1 section1 section2 section2 section2 section2 section3 section3 section3 section3"
+        "title2 title2 title2 title2 title2 title2 title2 title2 title2 title2 title2 title2"
+        "section4 section4 section4 section4 section5 section5 section5 section5 section6 section6 section6 section6"
+        "footer footer footer footer footer footer footer footer footer footer footer footer"
+        ;
+    }
+    /* .cart {
+        display:flex;
+        padding-left:175px;
+    } */
+    /* .shopping {
+        display:flex;
+    } */
+}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <nav>
+            <span><a href="index.html">Home</a></span>
+            <span><a href="product1.html">Women's Clothing</a></span>
+            <span><a href="product2.html">Men's Clothing</a></span>
+            <span><a href="policy.html">Policies</a></span>
+        </nav>
+        <div class="cart">
+            <strong class="shopping">Your Cart</strong> <img src="images/shoppingcart3.png" alt="shoppingcarticon">
+        </div>
+        <div class="logo">
+            <img src="images/retaillogo.png" class="wdn-stretch rounded-corners" alt="logo">
+        </div>
+        <div class="hero">
+            <p>GoFitnessActivewear</p>
+        </div>
+        <div class="title1">
+            <p><a href="product1.html">Women's Clothing</a></p>
+        </div>
+        <div class="section1">
+            <img src="images/homepagewomenstop.png" class="image" style="width:100%" alt="homepagewomenstop">
+        <div class="middle">
+        <div class="text"><a href="product1.html#wtops">Shop Women's Tops</a></div>
+    </div>
+    </div>
+        <div class="section2">
+            <img src="images/homepagewomensbottoms.png" class="image" style="width:100%" alt="homepagewomensbottoms">
+            <div class="middle2">
+            <div class="text2"><a href="product1.html#wbottoms">Shop Women's Bottoms</a></div>
+        </div>
+        </div>
+        <div class="section3">
+            <img src="images/homepagewomenshoe.png" class="image" style="width:100%" alt="homepagewomenshoe">
+            <div class="middle3">
+                <div class="text3"><a href="product1.html#wshoes">Shop Women's Shoes</a></div>
+            </div>
+        </div>
+        <div class="title2">
+            <p><a href="product2.html">Men's Clothing</a></p>
+        </div>
+        <div class="section4">
+            <img src="images/homepagemenstops.png" class="image" style="width:100%" alt="homepagemenstop">
+            <div class="middle4">
+                <div class="text4"><a href="product2.html#mtops">Shop Men's Tops</a></div>
+            </div>
+        </div>
+        <div class="section5">
+            <img src="images/homepagemensbottoms.png" class="image" style="width:100%" alt="homepagemensbottoms">
+            <div class="middle5">
+                <div class="text5"><a href="product2.html#mbottoms">Shop Men's Bottoms</a></div>
+            </div>
+        </div>
+        <div class="section6">
+            <img src="images/homepagemensshoe.png" class="image" style="width:100%" alt="mensshoe">
+            <div class="middle6">
+                <div class="text6"><a href="product2.html#mshoes">Shop Men's Shoes</a></div>
+            </div>
+        </div>
+        <footer>
+            <p>| 2022 | GoFitActivewear | All Rights Reserved.|</p>
+        </footer>
+    </div>
+</body>
+</html>

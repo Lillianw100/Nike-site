@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <title>Mens Clothing</title>
+    <style>
+        img {
+            max-width:100%;
+            height:auto;
+        }
+         .container > * { 
+             border:solid 1px transparent; 
+        }
+        .container {
+            display:grid;
+            grid-template-columns:1fr 1fr 1fr;
+            grid-template-areas:
+            "nav nav cart"
+            "logo logo logo"
+            "titlem1 titlem1 titlem1"
+            "sectionm1 sectionm1 sectionm1"
+            "sectionm2 sectionm2 sectionm2"
+            "sectionm3 sectionm3 sectionm3"
+            "sectionm4 sectionm4 sectionm4"
+            "titlem2 titlem2 titlem2"
+            "sectionm5 sectionm5 sectionm5"
+            "sectionm6 sectionm6 sectionm6"
+            "sectionm7 sectionm7 sectionm7"
+            "sectionm8 sectionm8 sectionm8"
+            "titlem3 titlem3 titlem3"
+            "sectionm9 sectionm9 sectionm9"
+            "sectionm10 sectionm10 sectionm10"
+            "sectionm11 sectionm11 sectionm11"
+            "sectionm12 sectionm12 sectionm12"
+            "footer footer footer"
+            ;
+        }
+        nav {
+            grid-area:nav;
+        }
+        .logo {
+            grid-area:logo;
+            display:flex;
+            align-items:center;
+            justify-content:center;
+        }
+        .cart {
+            grid-area:cart;
+            display:flex;
+            align-items:flex-start;
+            justify-content:flex-end;
+        }
+        .titlem1 {
+            grid-area:titlem1;
+        }
+        .sectionm1 {
+            grid-area:sectionm1;
+        }
+        .sectionm2 {
+            grid-area:sectionm2;
+        }
+        .sectionm3 {
+            grid-area:sectionm3;
+        }
+        .sectionm4 {
+            grid-area:sectionm4;
+        }
+        .titlem2 {
+            grid-area:titlem2;
+        }
+        .sectionm5 {
+            grid-area:sectionm5;
+        }
+        .sectionm6 {
+            grid-area:sectionm6;
+        }
+        .sectionm7 {
+            grid-area:sectionm7;
+        }
+        .sectionm8 {
+            grid-area:sectionm8;
+        }
+        .titlem3 {
+            grid-area:titlem3;
+        }
+        .sectionm9 {
+            grid-area:sectionm9;
+        }
+        .sectionm10 {
+            grid-area:sectionm10;
+        }
+        .sectionm11 {
+            grid-area:sectionm11;
+        }
+        .sectionm12 {
+            grid-area:sectionm12;
+        }
+        footer {
+            grid-area:footer;
+        }
+        @media only screen and (min-width:620px) {
+    .container {
+        display:grid;
+        grid-template-columns:repeat(12, 1fr);
+        grid-template-areas:
+        "nav nav nav nav logo logo logo logo cart cart cart cart"
+        "titlem1 titlem1 titlem1 titlem1 titlem1 titlem1 titlem1 titlem1 titlem1 titlem1 titlem1 titlem1"
+        "sectionm1 sectionm1 sectionm1 sectionm1 sectionm1 sectionm1 sectionm1 sectionm1 sectionm1 sectionm1 sectionm1 sectionm1"
+        "sectionm2 sectionm2 sectionm2 sectionm2 sectionm2 sectionm2 sectionm2 sectionm2 sectionm2 sectionm2 sectionm2 sectionm2"
+        "sectionm3 sectionm3 sectionm3 sectionm3 sectionm3 sectionm3 sectionm3 sectionm3 sectionm3 sectionm3 sectionm3 sectionm3"
+        "sectionm4 sectionm4 sectionm4 sectionm4 sectionm4 sectionm4 sectionm4 sectionm4 sectionm4 sectionm4 sectionm4 sectionm4"
+        "titlem2 titlem2 titlem2 titlem2 titlem2 titlem2 titlem2 titlem2 titlem2 titlem2 titlem2 titlem2"
+        "sectionm5 sectionm5 sectionm5 sectionm5 sectionm5 sectionm5 sectionm5 sectionm5 sectionm5 sectionm5 sectionm5 sectionm5"
+        "sectionm6 sectionm6 sectionm6 sectionm6 sectionm6 sectionm6 sectionm6 sectionm6 sectionm6 sectionm6 sectionm6 sectionm6"
+        "sectionm7 sectionm7 sectionm7 sectionm7 sectionm7 sectionm7 sectionm7 sectionm7 sectionm7 sectionm7 sectionm7 sectionm7"
+        "sectionm8 sectionm8 sectionm8 sectionm8 sectionm8 sectionm8 sectionm8 sectionm8 sectionm8 sectionm8 sectionm8 sectionm8"
+        "titlem3 titlem3 titlem3 titlem3 titlem3 titlem3 titlem3 titlem3 titlem3 titlem3 titlem3 titlem3"
+        "sectionm9 sectionm9 sectionm9 sectionm9 sectionm9 sectionm9 sectionm9 sectionm9 sectionm9 sectionm9 sectionm9 sectionm9"
+        "sectionm10 sectionm10 sectionm10 sectionm10 sectionm10 sectionm10 sectionm10 sectionm10 sectionm10 sectionm10 sectionm10 sectionm10"
+        "sectionm11 sectionm11 sectionm11 sectionm11 sectionm11 sectionm11 sectionm11 sectionm11 sectionm11 sectionm11 sectionm11 sectionm11"
+        "sectionm12 sectionm12 sectionm12 sectionm12 sectionm12 sectionm12 sectionm12 sectionm12 sectionm12 sectionm12 sectionm12 sectionm12"
+        "footer footer footer footer footer footer footer footer footer footer footer footer"
+        ;
+    }
+}
+@media only screen and (min-width:900px) {
+    .container {
+        display:grid;
+        grid-template-columns: repeat(12, 1fr);
+        grid-auto-rows: minmax(80px,auto);
+        grid-template-areas:
+        "nav nav nav nav logo logo logo logo cart cart cart cart"
+        "titlem1 titlem1 titlem1 titlem1 titlem1 titlem1 titlem1 titlem1 titlem1 titlem1 titlem1 titlem1"
+        "sectionm1 sectionm1 sectionm1 sectionm2 sectionm2 sectionm2 sectionm3 sectionm3 sectionm3 sectionm4 sectionm4 sectionm4"
+        "titlem2 titlem2 titlem2 titlem2 titlem2 titlem2 titlem2 titlem2 titlem2 titlem2 titlem2 titlem2"
+        "sectionm5 sectionm5 sectionm5 sectionm6 sectionm6 sectionm6 sectionm7 sectionm7 sectionm7 sectionm8 sectionm8 sectionm8"
+        "titlem3 titlem3 titlem3 titlem3 titlem3 titlem3 titlem3 titlem3 titlem3 titlem3 titlem3 titlem3"
+        "sectionm9 sectionm9 sectionm9 sectionm10 sectionm10 sectionm10 sectionm11 sectionm11 sectionm11 sectionm12 sectionm12 sectionm12"
+        "footer footer footer footer footer footer footer footer footer footer footer footer"
+        ;
+    }
+}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <nav>
+            <span><a href="index.html">Home</a></span>
+            <span><a href="product1.html">Women's Clothing</a></span>
+            <span><a href="product2.html">Men's Clothing</a></span>
+            <span><a href="policy.html">Policies</a></span>
+        </nav>
+        <div class="cart">
+            <strong class="shopping">Your Cart</strong> <img src="images/shoppingcart3.png" alt="shoppingcarticon">
+        </div>
+        <div class="logo">
+            <img src="images/retaillogo.png" class="wdn-stretch rounded-corners" alt="logo">
+        </div>
+        <div class="titlem1">
+            <div id="mtops"></div>
+            <p><b>Men's Tops</b></p>
+        </div>
+        <div class="sectionm1">
+            <p><b>Short Sleeve Top<br>$25</b></p>
+            <img src="images/mensshortsleevefinal.png" class="image" style="width:100%"  alt="mensshortsleeve">
+        </div>
+        <div class="sectionm2">
+            <p><b>Long Sleeve Top<br>$30</b></p>
+            <img src="images/menslongsleevefinal.png" class="image" style="width:100%" alt="menslongsleeve">
+        </div>
+        <div class="sectionm3">
+            <p><b>Tank Top<br>$20</b></p>
+            <img src="images/menstanktopfinal.png" class="image" style="width:100%" alt="menstanktop">
+        </div>
+        <div class="sectionm4">
+        <p><b>Jacket<br>$50</b></p>
+        <img src="images/mensjacketfinal.png" class="image" style="width:100%" alt="mensjacket">
+        </div>
+        <div class="titlem2">
+            <div id="mbottoms"></div>
+            <p><b>Men's Bottoms</b></p>
+        </div>
+        <div class="sectionm5">
+            <p><b>5 Inch Length Short<br>$25</b></p>
+            <img src="images/mens5inchshortfinal.png" class="image" style="width:100%" alt="mens5inchshort">
+        </div>
+        <div class="sectionm6">
+            <p><b>9 Inch Length Short<br>$30</b></p>
+            <img src="images/mens9inchshortfinal.png" class="image" style="width:100%" alt="mens9inchshort">
+        </div>
+        <div class="sectionm7">
+            <p><b>Joggers<br>$60</b></p>
+            <img src="images/mensjoggersfinal.png" class="image" style="width:100%" alt="mensjoggers">
+        </div>
+        <div class="sectionm8">
+            <p><b>Track Pant<br>$55</b></p>
+            <img src="images/menstrackpantfinal.png" class="image" style="width:100%" alt="menstrackpant">
+        </div>
+        <div class="titlem3">
+            <div id="mshoes"></div>
+            <p><b>Men's Shoes</b></p>
+        </div>
+        <div class="sectionm9">
+            <p><b>Training Shoes<br>$8</b></p>
+            <img src="images/menstrainingshoe.png" class="image" style="width:100%" alt="menstrainingshoe">
+        </div>
+        <div class="sectionm10">
+            <p><b>Lifting Shoes<br>$75</b></p>
+            <img src="images/mensliftingshoe.png" class="image" style="width:100%" alt="mensliftingshoe">
+        </div>
+        <div class="sectionm11">
+            <p><b>Running Shoes<br>$85</b></p>
+            <img src="images/mensrunningshoe.png" class="image" style="width:100%" alt="mensrunningshoe">
+        </div>
+        <div class="sectionm12">
+            <p><b>Walking Shoes<br>$65</b></p>
+            <img src="images/menswalkingshoe.png" class="image" style="width:100%" alt="menswalkingshoe">
+        </div>
+        <footer>
+            <p>| 2022 | GoFitActivewear | All Rights Reserved.|</p>
+        </footer>
+        </div>
+</body>
+</html>
